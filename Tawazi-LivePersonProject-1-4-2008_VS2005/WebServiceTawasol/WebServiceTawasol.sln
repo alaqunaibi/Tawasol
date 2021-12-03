@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceTawasol", "http://localhost/WebServiceTawasol/WebServiceTawasol.csproj", "{45C1A122-B0F8-4C4B-9D57-A19696D5D764}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{45C1A122-B0F8-4C4B-9D57-A19696D5D764}.Debug.ActiveCfg = Debug|.NET
+		{45C1A122-B0F8-4C4B-9D57-A19696D5D764}.Debug.Build.0 = Debug|.NET
+		{45C1A122-B0F8-4C4B-9D57-A19696D5D764}.Release.ActiveCfg = Release|.NET
+		{45C1A122-B0F8-4C4B-9D57-A19696D5D764}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

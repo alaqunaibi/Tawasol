@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.AlaQunaibi.com/TawasolServices/call" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.AlaQunaibi.com/TawasolServices/call" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.AlaQunaibi.com/TawasolServices/call">
+      <s:element name="ConnectToDB">
+        <s:complexType />
+      </s:element>
+      <s:element name="ConnectToDBResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="InsertData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Table" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Columns" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Values" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertDataResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Table" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="whr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteDataResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Table" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Columns" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Values" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="whr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDataResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RetrieveData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Table" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Columns" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="whr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Orderby" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetrieveDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetrieveDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PasswordID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckLoginResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetreiveScalarData_FromProcedure">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcedureName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParameterNames" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParameterTypes" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParameterValues" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetreiveScalarData_FromProcedureResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RetreiveScalarData_FromProcedureResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetreiveData_FromProcedure">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcedureName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParameterNames" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParameterTypes" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParameterValues" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Whr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetreiveData_FromProcedureResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetreiveData_FromProcedureResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAggregate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TableName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ColumnName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Whr" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="agregateType" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAggregateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAggregateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Call_DML_StoredProcedure">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcedureName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParameterNames" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParameterTypes" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParameterValues" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Whr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Call_DML_StoredProcedureResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConnectToDBSoapIn">
+    <wsdl:part name="parameters" element="tns:ConnectToDB" />
+  </wsdl:message>
+  <wsdl:message name="ConnectToDBSoapOut">
+    <wsdl:part name="parameters" element="tns:ConnectToDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertDataSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertData" />
+  </wsdl:message>
+  <wsdl:message name="InsertDataSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteDataSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteData" />
+  </wsdl:message>
+  <wsdl:message name="DeleteDataSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDataSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateData" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDataSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveDataSoapIn">
+    <wsdl:part name="parameters" element="tns:RetrieveData" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveDataSoapOut">
+    <wsdl:part name="parameters" element="tns:RetrieveDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckLogin" />
+  </wsdl:message>
+  <wsdl:message name="CheckLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetreiveScalarData_FromProcedureSoapIn">
+    <wsdl:part name="parameters" element="tns:RetreiveScalarData_FromProcedure" />
+  </wsdl:message>
+  <wsdl:message name="RetreiveScalarData_FromProcedureSoapOut">
+    <wsdl:part name="parameters" element="tns:RetreiveScalarData_FromProcedureResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetreiveData_FromProcedureSoapIn">
+    <wsdl:part name="parameters" element="tns:RetreiveData_FromProcedure" />
+  </wsdl:message>
+  <wsdl:message name="RetreiveData_FromProcedureSoapOut">
+    <wsdl:part name="parameters" element="tns:RetreiveData_FromProcedureResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAggregateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAggregate" />
+  </wsdl:message>
+  <wsdl:message name="GetAggregateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAggregateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Call_DML_StoredProcedureSoapIn">
+    <wsdl:part name="parameters" element="tns:Call_DML_StoredProcedure" />
+  </wsdl:message>
+  <wsdl:message name="Call_DML_StoredProcedureSoapOut">
+    <wsdl:part name="parameters" element="tns:Call_DML_StoredProcedureResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Tawasol_WService_CLSSoap">
+    <wsdl:operation name="ConnectToDB">
+      <wsdl:input message="tns:ConnectToDBSoapIn" />
+      <wsdl:output message="tns:ConnectToDBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertData">
+      <wsdl:input message="tns:InsertDataSoapIn" />
+      <wsdl:output message="tns:InsertDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteData">
+      <wsdl:input message="tns:DeleteDataSoapIn" />
+      <wsdl:output message="tns:DeleteDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateData">
+      <wsdl:input message="tns:UpdateDataSoapIn" />
+      <wsdl:output message="tns:UpdateDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveData">
+      <wsdl:input message="tns:RetrieveDataSoapIn" />
+      <wsdl:output message="tns:RetrieveDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckLogin">
+      <wsdl:input message="tns:CheckLoginSoapIn" />
+      <wsdl:output message="tns:CheckLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetreiveScalarData_FromProcedure">
+      <wsdl:input message="tns:RetreiveScalarData_FromProcedureSoapIn" />
+      <wsdl:output message="tns:RetreiveScalarData_FromProcedureSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetreiveData_FromProcedure">
+      <wsdl:input message="tns:RetreiveData_FromProcedureSoapIn" />
+      <wsdl:output message="tns:RetreiveData_FromProcedureSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAggregate">
+      <wsdl:input message="tns:GetAggregateSoapIn" />
+      <wsdl:output message="tns:GetAggregateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Call_DML_StoredProcedure">
+      <wsdl:input message="tns:Call_DML_StoredProcedureSoapIn" />
+      <wsdl:output message="tns:Call_DML_StoredProcedureSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Tawasol_WService_CLSSoap" type="tns:Tawasol_WService_CLSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConnectToDB">
+      <soap:operation soapAction="http://www.AlaQunaibi.com/TawasolServices/call/ConnectToDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertData">
+      <soap:operation soapAction="http://www.AlaQunaibi.com/TawasolServices/call/InsertData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteData">
+      <soap:operation soapAction="http://www.AlaQunaibi.com/TawasolServices/call/DeleteData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateData">
+      <soap:operation soapAction="http://www.AlaQunaibi.com/TawasolServices/call/UpdateData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveData">
+      <soap:operation soapAction="http://www.AlaQunaibi.com/TawasolServices/call/RetrieveData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckLogin">
+      <soap:operation soapAction="http://www.AlaQunaibi.com/TawasolServices/call/CheckLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetreiveScalarData_FromProcedure">
+      <soap:operation soapAction="http://www.AlaQunaibi.com/TawasolServices/call/RetreiveScalarData_FromProcedure" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetreiveData_FromProcedure">
+      <soap:operation soapAction="http://www.AlaQunaibi.com/TawasolServices/call/RetreiveData_FromProcedure" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAggregate">
+      <soap:operation soapAction="http://www.AlaQunaibi.com/TawasolServices/call/GetAggregate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Call_DML_StoredProcedure">
+      <soap:operation soapAction="http://www.AlaQunaibi.com/TawasolServices/call/Call_DML_StoredProcedure" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Tawasol_WService_CLSSoap12" type="tns:Tawasol_WService_CLSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConnectToDB">
+      <soap12:operation soapAction="http://www.AlaQunaibi.com/TawasolServices/call/ConnectToDB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertData">
+      <soap12:operation soapAction="http://www.AlaQunaibi.com/TawasolServices/call/InsertData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteData">
+      <soap12:operation soapAction="http://www.AlaQunaibi.com/TawasolServices/call/DeleteData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateData">
+      <soap12:operation soapAction="http://www.AlaQunaibi.com/TawasolServices/call/UpdateData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveData">
+      <soap12:operation soapAction="http://www.AlaQunaibi.com/TawasolServices/call/RetrieveData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckLogin">
+      <soap12:operation soapAction="http://www.AlaQunaibi.com/TawasolServices/call/CheckLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetreiveScalarData_FromProcedure">
+      <soap12:operation soapAction="http://www.AlaQunaibi.com/TawasolServices/call/RetreiveScalarData_FromProcedure" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetreiveData_FromProcedure">
+      <soap12:operation soapAction="http://www.AlaQunaibi.com/TawasolServices/call/RetreiveData_FromProcedure" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAggregate">
+      <soap12:operation soapAction="http://www.AlaQunaibi.com/TawasolServices/call/GetAggregate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Call_DML_StoredProcedure">
+      <soap12:operation soapAction="http://www.AlaQunaibi.com/TawasolServices/call/Call_DML_StoredProcedure" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Tawasol_WService_CLS">
+    <wsdl:port name="Tawasol_WService_CLSSoap" binding="tns:Tawasol_WService_CLSSoap">
+      <soap:address location="http://localhost/WebServiceTawasol/Service1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Tawasol_WService_CLSSoap12" binding="tns:Tawasol_WService_CLSSoap12">
+      <soap12:address location="http://localhost/WebServiceTawasol/Service1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

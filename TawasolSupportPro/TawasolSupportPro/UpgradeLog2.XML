@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="TawasolSupportPro">
+</Property><Property Name="Solution File" Value="D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\TawasolSupportPro.sln">
+</Property><Property Name="User Options File" Value="D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\TawasolSupportPro.suo">
+</Property><Property Name="Date" Value="Friday, January 01, 2010">
+</Property><Property Name="Time" Value="8:32 AM">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="TawasolSupportPro.sln" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\TawasolSupportPro.sln">
+</Event><Event ErrorLevel="0" Project="" Source="TawasolSupportPro.suo" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\TawasolSupportPro.suo">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="TawasolSupportPro.csproj" Description="Project file successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\TawasolSupportPro.csproj">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="TawasolSupportPro.csproj.user" Description="Project user file successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\TawasolSupportPro.csproj.user">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="AssemblyInfo.cs" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="clsFontMatters.cs" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\clsFontMatters.cs">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="frmTransferClientsBetweenOperators.cs" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\frmTransferClientsBetweenOperators.cs">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="frmTransferClientsBetweenOperators.Designer.cs" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\frmTransferClientsBetweenOperators.Designer.cs">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="Program.cs" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="frmLogin.cs" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\frmLogin.cs">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="frmMain.cs" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\frmMain.cs">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="Properties\Resources.Designer.cs" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="Properties\Settings.Designer.cs" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="Resource1.Designer.cs" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\Resource1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="Utilities.cs" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\Utilities.cs">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="Web References\ConnectionService\Reference.cs" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\Web References\ConnectionService\Reference.cs">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="images\bold.jpg" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\images\bold.jpg">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="images\urllink.jpg" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\images\urllink.jpg">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="images\underline.jpg" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\images\underline.jpg">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="images\Italic.jpg" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\images\Italic.jpg">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="images\fontcolor.jpg" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\images\fontcolor.jpg">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="images\coBrowser.jpg" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\images\coBrowser.jpg">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="images\SendCannedResponse.jpg" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\images\SendCannedResponse.jpg">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="images\Shortcut.jpg" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\images\Shortcut.jpg">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="images\history.jpg" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\images\history.jpg">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="images\transfer.jpg" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\images\transfer.jpg">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="images\stop.jpg" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\images\stop.jpg">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="images\SendHtml.jpg" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\images\SendHtml.jpg">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="images\PushPage.jpg" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\images\PushPage.jpg">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="Web References\ConnectionService\Service1.disco" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\Web References\ConnectionService\Service1.disco">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="app.config" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\app.config">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="Properties\Settings.settings" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="Web References\ConnectionService\Reference.map" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\Web References\ConnectionService\Reference.map">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="Web References\ConnectionService\Service1.wsdl" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\Web References\ConnectionService\Service1.wsdl">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="App.ico" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\App.ico">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="frmLogin.resx" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\frmLogin.resx">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="frmMain.resx" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\frmMain.resx">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="frmTransferClientsBetweenOperators.resx" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\frmTransferClientsBetweenOperators.resx">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="Properties\Resources.resx" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="Resource1.resx" Description="File successfully backed up as D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\Backup\Resource1.resx">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="TawasolSupportPro.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TawasolSupportPro" Source="TawasolSupportPro.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="TawasolSupportPro.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="TawasolSupportPro.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TawasolSupportPro" Source="TawasolSupportPro.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

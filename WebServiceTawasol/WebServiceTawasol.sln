@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "E:\Tawasol\WebServiceTawasol\", ".", "{856F633A-F28B-43A1-9293-87990CD13D42}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.VirtualPath = "/WebServiceTawasol"
+		Debug.AspNetCompiler.PhysicalPath = "E:\Tawasol\WebServiceTawasol\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WebServiceTawasol\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/WebServiceTawasol"
+		Release.AspNetCompiler.PhysicalPath = "E:\Tawasol\WebServiceTawasol\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\WebServiceTawasol\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49176"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{856F633A-F28B-43A1-9293-87990CD13D42}.Debug|.NET.ActiveCfg = Debug|.NET
+		{856F633A-F28B-43A1-9293-87990CD13D42}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

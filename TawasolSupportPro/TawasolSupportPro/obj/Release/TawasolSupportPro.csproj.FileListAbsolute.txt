@@ -1,0 +1,12 @@
+D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\bin\Release\TawasolSupportPro.exe.config
+D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\bin\Release\TawasolSupportPro.exe
+D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\bin\Release\TawasolSupportPro.XmlSerializers.dll
+D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\obj\Release\ResolveAssemblyReference.cache
+D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\obj\Release\TawasolSupportPro.frmLogin.resources
+D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\obj\Release\TawasolSupportPro.Form1.resources
+D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\obj\Release\TawasolSupportPro.frmTransferClientsBetweenOperators.resources
+D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\obj\Release\TawasolSupportPro.Properties.Resources.resources
+D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\obj\Release\TawasolSupportPro.Resource1.resources
+D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\obj\Release\TawasolSupportPro.csproj.GenerateResource.Cache
+D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\obj\Release\TawasolSupportPro.exe
+D:\data\Tawasol\TawasolSupportPro\TawasolSupportPro\obj\Release\TawasolSupportPro.XmlSerializers.dll
